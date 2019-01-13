@@ -74,7 +74,8 @@
             font-family: 'Raleway', sans-serif;
         }
         .header-phone{
-            width:500px;
+            
+            width: 500px;
         }
         .body-content{
             margin-top:50px;
@@ -486,6 +487,137 @@ input[type="image"] {
 }
 
 
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px){
+    body{
+        background:red;
+    }
+    .intro{
+        font-size:24px;
+        padding: 100px 200px 50px 200px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .header-phone{
+        width:100%;
+    }
+
+}
+
+
+@media (max-width: 992px){
+    body{
+        background:blue;
+    }
+    .banner-oneApp{
+        font-size:26px;
+        margin-top:160px;
+    }
+    .banner-button{
+        font-size:20px;
+    }
+    .intro{
+        font-size:24px;
+        padding: 100px 100px 50px 100px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .menu-icon {
+        font-size: 2em;
+    }
+    .text-logo{
+        font-size:46px;
+    }
+    .header-handlogo{
+        padding-top:11px;
+        width:46px;
+    }
+
+        
+
+}
+
+
+@media (max-width: 767px){
+    body{
+        background:green;
+    }
+    .intro{
+            font-size:24px;
+            padding: 100px 100px 50px 100px;
+            font-family: 'Raleway', sans-serif;
+        }
+        .header-phone{
+            margin-top:50px;
+            width:80%;
+            display:block;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        .banner-oneApp{
+            margin-top:30px;
+        }
+        .banner-button{
+            margin-bottom:70px;
+        }
+
+}
+@media (max-width: 424px){
+    body{
+        background:orange;
+    }
+    .intro{
+        font-size:24px;
+        padding: 100px 100px 50px 100px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .header-phone{
+        margin-top:50px;
+        width:80%;
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .banner-oneApp{
+        margin-top:30px;
+    }
+    .banner-button{
+        margin-bottom:70px;
+    }
+    .menu-icon {
+        margin-top:0px;
+        font-size: 1.8em;
+    }
+    .text-logo{
+        font-size:38px;
+        
+    }
+    .header-handlogo{
+        padding-top:15px;
+        width:38px;
+    }
+
+}
+
+@media (max-width: 319px){
+    body{
+        background:lavender;
+    }
+    .menu-icon {
+        margin-top:-10px;
+        font-size: 1.5em;
+    }
+    .text-logo{
+        font-size:24px;
+        
+    }
+    .header-handlogo{
+        padding-top:15px;
+        width:38px;
+    }
+
+}
+
     </style>
 
 </head>
@@ -533,13 +665,13 @@ input[type="image"] {
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 ">
+                <div class="col-md-6 col-12 order-2 order-md-1">
                     
                     <h2 class="banner-oneApp">One App. All Cannabis.</h2>
                     <button class="banner-button" type="button">Download App</button>
                 </div>
-                <div class="col-6">
-                    <img class="header-phone" data-aos="zoom-in" data-aos-duration="2000" src="images/bannerphones.png" alt="various features of the Buddy Jane App including the home page.">
+                <div class="col-md-6 col-12 order-1 order-md-2">
+                    <img class="header-phone d-block" data-aos="zoom-in" data-aos-duration="2000" src="images/bannerphones.png" alt="various features of the Buddy Jane App including the home page.">
                 </div>
             </div>
         </div>

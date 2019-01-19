@@ -737,6 +737,7 @@ input[type="image"] {
                 <div class="col-12">
                         <ul class="text-center ">
                                 <li class="list-item"><a href="index.html">Home</a></li> 
+                                <li class="list-item"><a href="#">Download App</a></li>
                                 <li class="list-item"><button id="features-button">Features<i class="fas fa-chevron-circle-down"></i></button></li>
                                 <div class="no-show" id="tabs-menu">
                                     <li class="list-item"><a id="social-page" href="#">Social Page</a></li>
@@ -953,8 +954,8 @@ input[type="image"] {
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <div class="footer-downloadapp pt-5 pb-3">DOWNLOAD THE APP</div>
+                <div class="col-12 text-center pt-5">
+                    
                     <a href="#"><img class="appstore pb-2" src="images/appstore.png" alt="the Apple App Store logo."></a>
                     
                     <hr class="footerdiv mb-4">
@@ -965,52 +966,54 @@ input[type="image"] {
                     <div class="tab-titles pb-2"><strong>FEATURES</strong></div>
                     
                     <ul>
-                        <li> <a href="#">Social Profile Page</a> </li>
-                        <li> <a href="#">Social Timeline</a></li>
-                        <li> <a href="#">Bud Finder</a></li>
-                        <li> <a href="#">Buddy Finder</a></li>
-                        <li> <a href="#">Budcast</a></li>
-                        <li> <a href="#">Chats</a></li>
+                        <li> <a id="social-page2" href="#">Social Page</a></li>
+                        <li> <a id="social-profile2" href="#">Social Profile</a></li>
+                        <li> <a id="buddy-finder2" href="#">Buddy Finder</a></li>
+                        <li> <a id="bud-finder2" href="#">Bud Finder</a></li>
+                        <li> <a id="budcast2" href="#">Budcast</a></li>
+                        <li> <a id="chats2" href="#">Chats</a></li>
+                        <li> <a id="shop2" href="#">Shop</a></li>
+                        <li> <a id="420promos2" href="#">420 Promos</a></li>
+                        <li> <a id="your-business2" href="#">Your Business</a></li>
                     </ul>
                 </div>
-                <div class="col-2 pl-5">
-                    <div class="tab-titles pb-2"><strong>ABOUT</strong></div>
-                    <ul>
-                        <li> <a href="#">About Us</a> </li>
-                        <li> <a href="#">Privacy</a></li>
-                        <li> <a href="#">Terms</a></li>
-                    </ul>
-                    
-                    
-                </div>
-                <div class="col-2 pl-5">
-                    <div class="tab-titles pb-2"><strong>CONTACT</strong></div>
-                    <ul>
-                        <li> <a href="#">Contact Us</a> </li>
-                    </ul>
-                    
-                    
-                </div>
+                
                 <div class="col-2 pl-5">
                     <div class="tab-titles pb-2"><strong>SOCIAL</strong></div>
                     <ul>
-                        <li> <a href="#">Facebook</a> </li>
-                        <li> <a href="#">Twitter</a></li>
-                        <li> <a href="#">Instagram</a></li>
+                        <li> <a target="_blank" href="https://www.facebook.com/Buddy-Jane-Mobile-659726217568443/">Facebook</a> </li>
+                        <li> <a target="_blank" href="https://twitter.com/okbuddyjane">Twitter</a></li>
+                        <li> <a target="_blank" href="https://www.instagram.com/buddyjane/">Instagram</a></li>
+                        <li> <a target="_blank" href="https://www.youtube.com/channel/UCC63VBrN-Yf7EH5YGc2HNTA?view_as=subscriber">Youtube</a></li>
+                        
                     </ul>
                     
                     
                 </div>
+                <div class="col-4">
+                        <div class="tab-titles pb-2"><strong>ABOUT</strong></div>
+                        Creators & long time buddies Loni & Paul have been building & shaping Buddy Jane with the intention of creating a friendly, easy to use, all-in-one platform for cannabis lovers to connect & share in an open, respectful, and welcoming environment. <br><br>
+                        
+                </div>
+                
+                
+
+
+
+
             </div>
             <div class="row footer-logo">
                 <div class="col-12 text-center">
                     <a href="index.html" class="footer-text-logo">Buddy Jane</a> 
                     <a href="index.html"><img class="header-handlogo" src="images/handlogowhite.png" alt="the Buddy Jane logo which depicts a hand holding a bud."></a> 
+                    <div class="text-center pb-2">Address: 312 W 5th St, Los Angeles, CA 90013 <br>
+                        Phone: (310) 845-5679</div>
+                        
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 text-center pt-2 pb-4">
-                    <div class="developMT">designed and developed by <a class="devmtlink" href="www.developmt.com">DevelopMT</a> </div> 
+                    <div class="developMT">Website designed and developed by <a class="devmtlink" href="www.developmt.com">DevelopMT</a> </div> 
                 </div>
             </div>
         </div>
@@ -1060,16 +1063,28 @@ $(document).ready(function(){
         'slow');
         });
         
+        
     // Social Page
     $("#social-page").click(function() {
         $('html,body').animate({
         scrollTop: $(".forsocialpagegohere").offset().top},
         'slow');
         });
+        $("#social-page2").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".forsocialpagegohere").offset().top},
+        'slow');
+        });
+
 
 
     // Social Profile
     $("#social-profile").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".forsocialprofilegohere").offset().top},
+        'slow');
+        });
+        $("#social-profile2").click(function() {
         $('html,body').animate({
         scrollTop: $(".forsocialprofilegohere").offset().top},
         'slow');
@@ -1081,9 +1096,19 @@ $(document).ready(function(){
         scrollTop: $(".forbuddyfindergohere").offset().top},
         'slow');
         });
+        $("#buddy-finder2").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".forbuddyfindergohere").offset().top},
+        'slow');
+        });
 
     // Bud Finder
     $("#bud-finder").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".forbudfindergohere").offset().top},
+        'slow');
+        });
+        $("#bud-finder2").click(function() {
         $('html,body').animate({
         scrollTop: $(".forbudfindergohere").offset().top},
         'slow');
@@ -1095,9 +1120,19 @@ $(document).ready(function(){
         scrollTop: $(".forbudcastgohere").offset().top},
         'slow');
         });
+        $("#budcast2").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".forbudcastgohere").offset().top},
+        'slow');
+        });
 
     // Chats
     $("#chats").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".forchatsgohere").offset().top},
+        'slow');
+        });
+        $("#chats2").click(function() {
         $('html,body').animate({
         scrollTop: $(".forchatsgohere").offset().top},
         'slow');
@@ -1109,6 +1144,11 @@ $(document).ready(function(){
         scrollTop: $(".forshopgohere").offset().top},
         'slow');
         });
+        $("#shop2").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".forshopgohere").offset().top},
+        'slow');
+        });
 
     // 420 Promos
     $("#420promos").click(function() {
@@ -1116,9 +1156,19 @@ $(document).ready(function(){
         scrollTop: $(".for420promosgohere").offset().top},
         'slow');
         });
+        $("#420promos2").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".for420promosgohere").offset().top},
+        'slow');
+        });
 
     // Your Business
     $("#your-business").click(function() {
+        $('html,body').animate({
+        scrollTop: $(".foryourbusinessgohere").offset().top},
+        'slow');
+        });
+        $("#your-business2").click(function() {
         $('html,body').animate({
         scrollTop: $(".foryourbusinessgohere").offset().top},
         'slow');

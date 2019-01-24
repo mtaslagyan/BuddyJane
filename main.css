@@ -1,0 +1,736 @@
+
+    /************************************************* GLOBAL CLASSES *************************************************/
+
+    @font-face {
+            font-family: "Melville";
+            src: url("Melville.ttf");
+        }
+        html, body{
+            margin:0;
+            padding:0;
+            overflow-x: hidden;
+        }
+        button:focus {
+            outline:0;
+        }
+
+        /* this class can be used for all feature phones */
+        .featurephoneimages{
+            width:450px;
+        }
+        /* this class can be used for all feature titles */
+        .feature-titles{
+            font-family: 'Raleway';
+            font-weight:300;
+            font-size:30px;
+            margin-top:90px;
+        }
+        /* this class can be used for all feature descriptions */
+        .feature-description{
+            font-size:24px;
+            font-family: 'Raleway', sans-serif;
+        }
+        /* this is the horizontal divider that divides the sections */
+        .body-content-divider{
+            width:80%;
+            background:rgb(213, 213, 213);
+            margin-top:50px;
+            margin-bottom:100px;
+        }
+        /* this is the try it now button, although each feature has different colors */
+        .tryitnow{
+            color:white;
+            padding:12px 50px;
+            font-size:18px;
+            font-weight:300;
+            border-radius:50px;
+        }
+
+
+
+    /************************************************* HEADER *************************************************/
+        .topheader{
+            margin-top:20px;
+        }
+        .text-logo{
+            font-family: 'Melville';
+            color:black;
+            font-size:60px;
+        }
+        .header-handlogo{
+            margin-top:-35px;
+            width:60px;
+            margin-left:10px;
+        }
+        header a:hover{
+            text-decoration: none;
+            color:black;
+        }
+        header a:hover{
+            text-decoration: none;
+            color:black;
+        }
+        .banner-oneApp{
+            margin-top:200px;
+            text-align: center;
+            font-weight:300;
+            font-size:56px;
+            font-family: 'Melville', sans-serif;
+            margin-bottom:20px;
+        }
+        .oneapp-horizontaldiv{
+            background:#00ccff;
+            height:1px;
+            width:90px;
+            display:block;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        .banner-appstore{
+            width:200px;
+            border:solid 2px transparent;
+            background:none;
+            padding:0;
+            margin-top:25px;
+            margin-bottom:30px;
+        }
+        .banner-appstore:hover{
+           border:solid 2px #00a5ce;
+           border-radius:10px;
+        }
+        .banner-android{
+            font-family: 'Raleway';
+            font-size:18px;
+        }
+        .header-phone{
+            text-shadow: 0px 14px 34px -6px #000000; 
+            text-shadow: 0px 14px 34px -6px #000000;
+            width: 550px;
+        }
+        .body-content{
+            margin-top:50px;
+            background-image: linear-gradient(#f2fbff, rgb(255, 243, 255), #f2fbff);
+        }
+        .intro{
+            font-size:24px;
+            padding: 100px 400px 50px 400px;
+            font-family: 'Raleway', sans-serif;
+        }
+ 
+
+
+
+
+
+    /************************************************* SCROLL TO TOP BUTTON *************************************************/
+        .scrolltotop{
+            position:fixed;
+            bottom:0;
+            right:5%;
+            background:white;
+            font-size:18px;
+            font-family: 'Raleway';
+            padding:10px 10px;
+            z-index: 1000;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        .scrolltotop:hover{
+            background:rgb(0, 0, 14);
+            color:white;
+            cursor:pointer;
+        }
+
+
+
+
+
+
+    /************************************************* MENU BUTTON AND SLIDE *************************************************/
+        .show{
+            display:block;
+        }
+        .no-show{
+            display:none;
+        }
+        .menu-button ul{
+            padding:0;
+        }
+        #menu li{
+            list-style-type: none;
+        } 
+        #menu ul{
+            padding:0;
+        }
+        .menu-button{
+            background:none;
+            border:none;
+            float:right;
+        }
+        .menu-button:hover{
+            cursor:pointer;
+            color:#00ccff;
+        }
+        .list-item{
+            font-size:24px;
+            font-weight:100;
+            background:rgb(249, 249, 249);
+        }
+        .list-item a{
+            color:rgb(46, 46, 46);
+            width:100%;
+        }
+        .list-item a:hover{
+            color:rgb(6, 6, 6);
+            border-left: 1px solid black;
+            padding-left:18px;
+        }
+        .list-item button{
+            border:none;
+            font-size:24px;
+            font-weight:100;
+            background:rgb(249, 249, 249);
+        }
+        .list-item button:hover{
+            color:rgb(6, 6, 6);
+            border-left: 1px solid black;
+            padding-left:18px;
+            cursor:pointer;
+        }
+        .fa-chevron-circle-down{
+            padding-left:10px;
+            font-size:18px;
+        }
+        .carret-rotate{
+            transform-origin: 67% 50%;
+            transform: rotate(180deg);
+        }
+        .menu-icon {
+            font-size: 3em;
+            max-width: 45px;
+            text-align: center;
+            display: block;
+            margin: 15% auto;
+            cursor: pointer;
+            transition: transform .2s ease;
+        }
+        .menu-icon:hover {
+            transform: scale(0.9);
+        }
+        .menu-icon:before, .menu-icon:after {
+            line-height: .5;
+        }
+        .menu-icon:before {
+            content: '☰';
+            display: block;
+            margin-left:7px;
+        }
+        .menu-icon:after {
+            content: '╳';
+            font-size: .65em;
+            font-weight: 800;
+            display: none;
+            margin-top:11px;
+        }
+        #toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        #toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon:before {
+            display: none;
+        }
+        #toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon:after {
+            display: block;
+        }
+        input {
+            display: none;
+        }
+        input[type="image"] {
+            display: block !important;
+            -webkit-transform: scale(0.5) translateY(-24px);
+            transform: scale(0.5) translateY(-24px);
+            }
+            * {
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+        }
+
+
+
+
+    /************************************************* FEATURES *************************************************/
+
+
+        /* 1. SOCIAL PAGE (PHONE IS ON THE LEFT) */
+        .social-page-small-divider{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .social-page-tryitnow{
+            background:rgb(117, 155, 252);
+            margin-top:50px;
+        }
+        .social-page-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(73, 124, 252);
+        }
+
+
+        /* 2. SOCIAL PROFILE  (PHONE IS ON THE RIGHT)  */
+        .social-profile-small-divider{
+            background:rgb(82, 142, 247);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        
+        .social-profile-tryitnow{
+            background:rgb(82, 142, 247);
+            margin-top:50px;
+        }
+        .social-profile-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(37, 113, 244);
+        }
+    
+
+        /* 3. SHOP  (PHONE IS ON THE LEFT)  */
+        .shop-small-divider{
+            background:rgb(82, 142, 247);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .shop-tryitnow{
+            background:rgb(82, 142, 247);
+            margin-top:50px;
+        }
+        .shop-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(57, 125, 243);
+        }
+
+
+        /* 4. 420 PROMO  (PHONE IS ON THE RIGHT)  */
+        .promo420-small-divider{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .promo420-tryitnow{
+            background:rgb(117, 155, 252);
+            margin-top:50px;
+        }
+        .promo420-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(83, 130, 249);
+        }
+
+
+        /* 5. BUDDY FINDER (PHONE IS ON THE LEFT) */
+        .BFR-small-divider{
+            background:rgb(160, 173, 249);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .BFR-tryitnow{
+            background:rgb(160, 173, 249);
+            margin-top:50px;
+        }
+        .BFR-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(124, 124, 247);
+        }
+
+
+        /* 6. BUD FINDER (PHONE IS ON THE RIGHT) */
+        .BF-small-divider{
+            background:rgb(160, 167, 249);            
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .BF-tryitnow{
+            background:rgb(160, 167, 249);  
+            margin-top:50px;          
+        }
+        .BF-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(123, 123, 247);     
+        }
+
+
+        /* 7. BUDCAST (PHONE IS ON THE LEFT) */
+        .BC-small-divider{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .BC-tryitnow{
+            background:rgb(117, 155, 252);
+            margin-top:50px;
+        }
+        .BC-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(83, 130, 249);
+        }
+
+
+        /* 8. CHATS (PHONE IS ON THE RIGHT) */
+        .chats-small-divider{
+            background:rgb(82, 142, 247);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .chats-tryitnow{
+            background:rgb(82, 142, 247);
+            margin-top:50px;
+        }
+        .chats-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(57, 125, 243);
+        }
+
+
+        /* 9. YOUR BUSINESS (PHONE IS ON THE LEFT) */
+        .YB-small-divider{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .YB-tryitnow{
+            background:rgb(117, 155, 252);
+            margin-top:50px;
+        }
+        .YB-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(83, 130, 249);
+        }
+
+
+        /* 10. ADVANCED BUSINEESS ACCOUNT (PHONE IS ON THE RIGHT) */
+        .ABA-small-divider{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            float:left;
+        }
+        .ABA-tryitnow{
+            background:rgb(117, 155, 252);
+            margin-bottom:20px;
+        }
+        .ABA-tryitnow:hover{
+            cursor:pointer;
+            background:rgb(83, 130, 249);
+        }
+        .ABA ul{
+            list-style-image: url('images/cannabis-icon2.png');
+        }
+        .ABA li{
+            padding-bottom:10px;
+        }
+
+
+        /* CLOSING SECTION WITH BUDDY JANE LOGO PHONE */
+
+        .letsgetstarted{
+            background:#00ccff;
+            color:white;
+            padding:12px 50px;
+            font-size:20px;
+            font-weight:400;
+            border-radius:50px;
+            margin-top:50px;
+            display:block;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        .letsgetstarted:hover{
+            cursor:pointer;
+            background:#009cdf;
+        }
+        .final-phone{
+            display:block;
+            margin-right:auto;
+            margin-left:auto;
+            width:450px;
+            margin-bottom:60px
+        }
+        .oneapp-final{
+            text-align:center;
+            font-family: 'Melville';
+            font-size:50px;
+            margin-top:150px;
+        }
+
+    
+
+
+
+    /************************************************* FOOTER *************************************************/
+
+        footer{
+            background:rgb(3, 4, 16);
+            color:white;
+        }
+        h6{
+            font-size:16px;
+            padding:10px;
+            border-bottom:solid 1px rgb(172, 172, 172);
+            margin-bottom:0;
+        }
+        h6 a{
+            color:rgb(172, 172, 172);
+        }
+        h6 a:hover{
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .footer-titles{
+            font-size:24px;
+            font-weight:100;
+            letter-spacing:2px;
+            text-align:center;
+            margin-bottom:10px;
+        }
+        .appstore{
+            width:180px;
+            border:solid 2px transparent;
+        }
+        .appstore:hover{
+            border:solid 2px #00a5ce;
+            border-radius:10px;
+        }
+        .footerdiv{
+            background:rgb(240, 240, 240);
+            width:80%;
+        }
+        .footer-tabs{
+            color:white;
+            font-size:14px;
+        }
+        .footer-tabs ul li {
+            text-align:left;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .footer-tabs ul{
+            padding:0;
+        }
+        .footer-tabs ul li a{
+            color:white;
+        }
+        .footer-text-logo{
+            font-family: 'Melville';
+            color:white;
+            font-size:50px;
+        }
+        .footer-logo a:hover{
+            text-decoration: none;
+            color:white;
+        }
+        .developMT{
+            color:white;
+            font-size:14px;
+        }
+        .devmtlink{
+            color:rgb(161, 198, 210);
+        }
+        .devmtlink:hover{
+            color:rgb(25, 131, 164);
+        }
+
+
+
+
+
+    /************************************************* MEDIA QUERIES *************************************************/
+
+        @media (max-width: 1200px){
+            .banner-oneApp{
+                margin-top:120px;
+                font-size:50px;
+            }
+            body{
+                background:red;
+            }
+            .intro{
+                font-size:24px;
+                padding: 100px 200px 50px 200px;
+                font-family: 'Raleway', sans-serif;
+            }
+            .header-phone{
+                width:100%;
+            }
+        }
+
+
+        @media (max-width: 1024px){
+            body{
+                background:yellow;
+            }
+            .intro{
+                font-size:24px;
+                padding: 100px 150px 50px 150px;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+
+
+        @media (max-width: 992px){
+            body{
+                background:blue;
+            }
+            .banner-oneApp{
+                font-size:38px;
+                margin-top:80px;
+            }
+            .banner-appstore{
+                width:140px;
+            }
+            .intro{
+                font-size:24px;
+                padding: 100px 100px 50px 100px;
+                font-family: 'Raleway', sans-serif;
+            }
+            .menu-icon {
+                font-size: 2em;
+            }
+            .text-logo{
+                font-size:46px;
+            }
+            .header-handlogo{
+                padding-top:11px;
+                width:46px;
+            }
+            .oneapp-horizontaldiv{
+                margin-bottom:0px;
+            }
+        }
+
+
+
+        @media (max-width: 767px){
+            body{
+                background:green;
+            }
+            .intro{
+                font-size:24px;
+                padding: 100px 100px 50px 100px;
+                font-family: 'Raleway', sans-serif;
+            }
+            .header-phone{
+                margin-top:50px;
+                width:80%;
+                display:block;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            .banner-oneApp{
+                margin-top:30px;
+            }
+            .banner-button{
+                margin-bottom:70px;
+            }
+            .social-profile-phone{
+                float:none;
+                display:block;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            .med-wrapper{
+                text-align:center;
+            }
+            .SP-small-divider{
+                display:block;
+                margin-right:auto;
+                margin-left:auto;
+                float:none;
+            }
+            .social-profile{
+                margin-top:60px;
+            }
+            .SP-tryitnow{
+                margin-bottom:50px;
+            }
+        }
+
+
+
+        @media (max-width: 424px){
+            body{
+                background:orange;
+            }
+            .intro{
+                font-size:24px;
+                padding: 100px 50px 50px 50px;
+                font-family: 'Raleway', sans-serif;
+            }
+            .header-phone{
+                margin-top:50px;
+                width:80%;
+                display:block;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            .banner-oneApp{
+                margin-top:30px;
+            }
+            .banner-button{
+                margin-bottom:70px;
+            }
+            .text-logo{
+                font-size:38px;
+            }
+            .header-handlogo{
+                padding-top:15px;
+                width:38px;
+            }
+            .menu-icon:before {
+                font-size:22px;
+                content: '☰';
+                display: block;
+                margin-left:7px;
+                margin-right:5px;
+            }
+            .menu-icon:after {
+                content: '╳';
+                font-size: .65em;
+                font-weight: 800;
+                display: none;
+                margin-top:5px;
+                margin-right:13px;
+            }
+        }
+
+
+
+        @media (max-width: 319px){
+            body{
+                background:lavender;
+            }
+            .intro{
+                font-size:24px;
+                padding: 100px 20px 50px 20px;
+                font-family: 'Raleway', sans-serif;
+            }
+            .menu-icon {
+                margin-top:-10px;
+                font-size: 1.5em;
+            }
+            .text-logo{
+                font-size:24px; 
+            }
+            .header-handlogo{
+                padding-top:15px;
+                width:38px;
+            }
+        }
+

@@ -1,795 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>BuddyJane | Beta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    // <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Muli|Nunito+Sans|Raleway|Sarabun" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="icon" href="images/iconlogo.png">
-    <style>
-        @font-face {
-            font-family: "Melville";
-            src: url("Melville.ttf");
-        }
-        html, body{
-            margin:0;
-            padding:0;
-            overflow-x: hidden;
-        }
-        button:focus {
-            outline:0;
-        }
-
-        .header-handlogo{
-            margin-top:-35px;
-            width:60px;
-            margin-left:10px;
-        }
-        header a:hover{
-            text-decoration: none;
-            color:black;
-        }
-        header a:hover{
-            text-decoration: none;
-            color:black;
-        }
-        
-
-        /* .banner-button{
-            background:#00ccff;
-            color:white;
-            padding:12px 50px;
-            font-size:24px;
-            font-weight:300;
-            border-radius:50px;
-            display:block;
-            margin-right:auto;
-            margin-left:auto;
-            margin-top:40px;
-        } */
-        /* .banner-button:hover{
-            background:#0076b5;
-            cursor:pointer;
-        } */
-        .banner-oneApp{
-            margin-top:200px;
-            text-align: center;
-            font-weight:300;
-            font-size:56px;
-            font-family: 'Melville', sans-serif;
-            margin-bottom:20px;
-        }
-        .oneapp-horizontaldiv{
-           
-            background:#00ccff;
-            height:1px;
-            width:90px;
-            display:block;
-            margin-right:auto;
-            margin-left:auto;
-        
-        }
-        .banner-appstore{
-            
-            width:200px;
-            border:solid 2px transparent;
-            background:none;
-            padding:0;
-            margin-top:25px;
-            margin-bottom:30px;
-        }
-        .banner-appstore:hover{
-           border:solid 2px #00a5ce;
-           border-radius:10px;
-        }
-        .banner-android{
-            font-family: 'Raleway';
-            font-size:18px;
-        }
-        .header-phone{
-            text-shadow: 0px 14px 34px -6px #000000; 
-            text-shadow: 0px 14px 34px -6px #000000;
-            width: 550px;
-        }
-        .body-content{
-            margin-top:50px;
-            background-image: linear-gradient(#f2fbff, rgb(255, 243, 255), #f2fbff);
-        }
-        .intro{
-            font-size:24px;
-            padding: 100px 400px 50px 400px;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        /* 1. SOCIAL PROFILE PAGE (PHONE IS ON THE LEFT)  */
-        /* COPY PASTE THIS FOR ODD DIVS */
-
-        .intro-socialprofilepage-divider{
-            width:80%;
-            background:rgb(213, 213, 213);
-            margin-bottom:50px;
-        }
-        .featurephoneimages{
-            width:450px;
-        }
-        .social-profile-phone{
-            float:right;
-            margin-right:80px;
-            width:275px;
-        }
-        .feature-titles{
-            font-family: 'Raleway';
-            font-weight:300;
-            font-size:30px;
-            margin-top:90px;
-        }
-        .SP-small-divider{
-            background:rgb(82, 142, 247);
-            height:3px;
-            width:60px;
-            float:left;
-        }
-        .SP-description{
-            /* padding-right:250px; */
-            font-size:24px;
-            font-family: 'Raleway', sans-serif;
-            
-        }
-        .SP-tryitnow{
-            background:rgb(82, 142, 247);
-            color:white;
-            padding:12px 50px;
-            font-size:18px;
-            font-weight:300;
-            border-radius:50px;
-            margin-top:50px;
-        }
-        .SP-tryitnow:hover{
-            cursor:pointer;
-            background:rgb(37, 113, 244);
-        }
-        /* 2. SOCIAL TIMELINE (PHONE IS ON THE RIGHT AND IS CUT!!) */
-        /* COPY PASTE THIS FOR EVEN DIVS */
-        .body-content-divider{
-            width:80%;
-            background:rgb(213, 213, 213);
-            margin-top:50px;
-            margin-bottom:100px;
-        }
-       
-        .social-timeline-phone{
-            margin-left:80px;
-            width:275px;
-        }
-        .social-timeline{
-            font-family: 'Raleway';
-            font-size:30px;
-            margin-top:40px;
-        }
-        .social-page{
-            font-family: 'Raleway';
-            font-size:30px;
-            margin-top:120px;
-        }
-        .social-timeline-chats{
-            font-family: 'Raleway';
-            font-size:30px;
-            margin-top:90px;
-        }
-        .ST-small-divider{
-            background:rgb(117, 155, 252);
-            height:3px;
-            width:60px;
-            float:left;
-        }
-        .ST-description{
-            
-            font-size:24px;
-            font-family: 'Raleway', sans-serif;
-        }
-        .ST-tryitnow{
-            background:rgb(117, 155, 252);
-            color:white;
-            padding:12px 50px;
-            font-size:18px;
-            font-weight:300;
-            border-radius:50px;
-            margin-top:50px;
-        }
-        .ST-tryitnow:hover{
-            cursor:pointer;
-            background:rgb(73, 124, 252);
-        }
-        /* I'm using the same css for the text of the divs, just the colors of the divider and button are different, so here I will switch them out. */
-
-        /* Buddy-finder Colors */
-        .BFR-small-divider{
-            background:rgb(160, 173, 249);
-            height:3px;
-            width:60px;
-            float:left;
-        }
-        .BFR-tryitnow{
-            background:rgb(160, 173, 249);
-            color:white;
-            padding:12px 50px;
-            font-size:18px;
-            font-weight:300;
-            border-radius:50px;
-            margin-top:50px;
-        }
-        .BFR-tryitnow:hover{
-            cursor:pointer;
-            background:rgb(124, 124, 247);
-        }
-        /* Bud-finder Colors */
-        .BF-small-divider{
-            background:rgb(160, 167, 249);            
-            height:3px;
-            width:60px;
-            float:left;
-        }
-        .BF-tryitnow{
-            background:rgb(160, 167, 249);            
-            color:white;
-            padding:12px 50px;
-            font-size:18px;
-            font-weight:300;
-            border-radius:50px;
-            margin-top:50px;
-        }
-        .BF-tryitnow:hover{
-            cursor:pointer;
-            background:rgb(123, 123, 247);     
-        }
-        /* Budcast Colors */
-        .BC-small-divider{
-            background:rgb(117, 155, 252);
-            height:3px;
-            width:60px;
-            float:left;
-        }
-        .BC-tryitnow{
-            background:rgb(117, 155, 252);
-            color:white;
-            padding:12px 50px;
-            font-size:18px;
-            font-weight:300;
-            border-radius:50px;
-            margin-top:50px;
-        }
-        .BC-tryitnow:hover{
-            cursor:pointer;
-            background:rgb(83, 130, 249);
-        }
-        /* Chats Colors */
-        .Chats-small-divider{
-            background:rgb(82, 142, 247);
-            height:3px;
-            width:60px;
-            float:left;
-        }
-        .Chats-tryitnow{
-            background:rgb(82, 142, 247);
-            color:white;
-            padding:12px 50px;
-            font-size:18px;
-            font-weight:300;
-            border-radius:50px;
-            margin-top:50px;
-        }
-        .Chats-tryitnow:hover{
-            cursor:pointer;
-            background:rgb(57, 125, 243);
-        }
-
-        /* Full-PHONE  */
-        .letsgetstarted{
-            background:#00ccff;
-            color:white;
-            padding:12px 50px;
-            font-size:20px;
-            font-weight:400;
-            border-radius:50px;
-            margin-top:50px;
-            display:block;
-            margin-right:auto;
-            margin-left:auto;
-            
-        }
-        .letsgetstarted:hover{
-            cursor:pointer;
-            background:#009cdf;
-        }
-        
-        .full-phone{
-            
-            display:block;
-            margin-right:auto;
-            margin-left:auto;
-            width:450px;
-            margin-bottom:60px
-        }
-        .oneapp-full{
-            text-align:center;
-            font-family: 'Melville';
-            font-size:50px;
-            margin-top:150px;
-        }
-
-        /* FOOTER */
-        footer{
-            background:rgb(3, 4, 16);
-            color:white;
-        }
-
-        
-        .text-logo{
-            font-family: 'Melville';
-            color:black;
-            font-size:60px;
-            
-        }
-        .topheader{
-            margin-top:20px;
-        }
-        .appstore{
-            width:180px;
-            border:solid 2px transparent;
-        }
-        
-        .appstore:hover{
-            border:solid 2px #00a5ce;
-           border-radius:10px;
-        }
-        .footerdiv{
-            background:rgb(240, 240, 240);
-            width:80%;
-        }
-        .footer-tabs{
-            color:white;
-            font-size:14px;
-        }
-        .footer-tabs ul li {
-            text-align:left;
-            text-decoration: none;
-            list-style-type: none;
-        }
-        .footer-tabs ul{
-            padding:0;
-        }
-        .footer-tabs ul li a{
-            color:white;
-        }
-        .footer-text-logo{
-            font-family: 'Melville';
-            color:white;
-            font-size:50px;
-        }
-        .footer-logo a:hover{
-            text-decoration: none;
-            color:white;
-        }
-        .developMT{
-            color:white;
-            font-size:14px;
-        }
-        .devmtlink{
-            color:rgb(161, 198, 210);
-        }
-        .devmtlink:hover{
-            color:rgb(25, 131, 164);
-            
-        }
-        .show{
-            display:block;
-        }
-        .no-show{
-            display:none;
-        }
-
-        .fa-bars{
-            font-size:30px;
-            float:right;
-            margin-top:32px;
-        }
-         .menu-button ul{
-            padding:0;
-        }
-       #menu li{
-            list-style-type: none;
-        } 
-        #menu ul{
-            padding:0;
-        }
-       
-        .menu-button{
-            background:none;
-            border:none;
-            float:right;
-        }
-        .menu-button:hover{
-            cursor:pointer;
-            color:#00ccff;
-        }
-
-        .list-item{
-            font-size:24px;
-            font-weight:100;
-            background:rgb(249, 249, 249);
-        }
-        .list-item a{
-            color:rgb(46, 46, 46);
-            width:100%;
-        }
-        /* .list-item:hover{
-            background:rgb(225, 225, 225);
-        } */
-        .list-item a:hover{
-            color:rgb(6, 6, 6);
-            border-left: 1px solid black;
-            padding-left:18px;
-            
-        }
-
-        /* Your Business 2 */
-        .YB2-tryitnow{
-            background:rgb(117, 155, 252);
-            color:white;
-            padding:12px 50px;
-            font-size:18px;
-            font-weight:300;
-            border-radius:50px;
-            margin-top:15px;
-        }
-        .YB2-tryitnow:hover{
-            background:rgb(80, 128, 249);
-            cursor:pointer;
-        }
-        
-.menu-icon {
-  font-size: 3em;
-  max-width: 45px;
-  text-align: center;
-  display: block;
-  margin: 15% auto;
-  cursor: pointer;
-  transition: transform .2s ease;
-}
-.menu-icon:hover {
-  transform: scale(0.9);
-}
-.menu-icon:before, .menu-icon:after {
-  line-height: .5;
-}
-.menu-icon:before {
-  content: '☰';
-  display: block;
-  margin-left:7px;
-}
-.menu-icon:after {
-  content: '╳';
-  font-size: .65em;
-  font-weight: 800;
-  display: none;
-  margin-top:11px;
-  
-  /* margin-top:14px; */
-}
- #toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
- #toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon:before {
-  display: none;
-}
- #toggle-menu:checked ~ label[for="toggle-menu"] .menu-icon:after {
-  display: block;
-}
-input {
-  display: none;
-}
-input[type="image"] {
-  display: block !important;
-  -webkit-transform: scale(0.5) translateY(-24px);
-  transform: scale(0.5) translateY(-24px);
-}
-* {
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-
-
-
-/* MEDIA QUERIES */
-@media (max-width: 1200px){
-    body{
-        background:red;
-    }
-    .intro{
-        font-size:24px;
-        padding: 100px 200px 50px 200px;
-        font-family: 'Raleway', sans-serif;
-    }
-    .header-phone{
-        width:100%;
-    }
-
-}
-@media (max-width: 1024px){
-    body{
-        background:yellow;
-    }
-    .intro{
-        font-size:24px;
-        padding: 100px 150px 50px 150px;
-        font-family: 'Raleway', sans-serif;
-    }
-    
-}
-
-
-@media (max-width: 992px){
-    body{
-        background:blue;
-    }
-    .banner-oneApp{
-        font-size:26px;
-        margin-top:160px;
-    }
-    .banner-button{
-        font-size:20px;
-    }
-    .intro{
-        font-size:24px;
-        padding: 100px 100px 50px 100px;
-        font-family: 'Raleway', sans-serif;
-    }
-    .menu-icon {
-        font-size: 2em;
-    }
-    .text-logo{
-        font-size:46px;
-    }
-    .header-handlogo{
-        padding-top:11px;
-        width:46px;
-    }
-
-    
-
-}
-
-
-@media (max-width: 767px){
-    body{
-        background:green;
-    }
-    .intro{
-            font-size:24px;
-            padding: 100px 100px 50px 100px;
-            font-family: 'Raleway', sans-serif;
-        }
-        .header-phone{
-            margin-top:50px;
-            width:80%;
-            display:block;
-            margin-right:auto;
-            margin-left:auto;
-        }
-        .banner-oneApp{
-            margin-top:30px;
-        }
-        .banner-button{
-            margin-bottom:70px;
-        }
-        .social-profile-phone{
-            float:none;
-            display:block;
-            margin-right:auto;
-            margin-left:auto;
-        }
-        .med-wrapper{
-            text-align:center;
-
-        }
-        .SP-small-divider{
-            display:block;
-            margin-right:auto;
-            margin-left:auto;
-            float:none;
-        }
-        .social-profile{
-            margin-top:60px;
-        }
-        .SP-tryitnow{
-            margin-bottom:50px;
-        }
-}
-@media (max-width: 424px){
-    body{
-        background:orange;
-    }
-    .intro{
-        font-size:24px;
-        padding: 100px 50px 50px 50px;
-        font-family: 'Raleway', sans-serif;
-    }
-    .header-phone{
-        margin-top:50px;
-        width:80%;
-        display:block;
-        margin-right:auto;
-        margin-left:auto;
-    }
-    .banner-oneApp{
-        margin-top:30px;
-    }
-    .banner-button{
-        margin-bottom:70px;
-    }
-    
-    .text-logo{
-        font-size:38px;
-        
-    }
-    .header-handlogo{
-        padding-top:15px;
-        width:38px;
-    }
-
-}
-
-@media (max-width: 319px){
-    body{
-        background:lavender;
-    }
-    .intro{
-        font-size:24px;
-        padding: 100px 20px 50px 20px;
-        font-family: 'Raleway', sans-serif;
-    }
-    .menu-icon {
-        margin-top:-10px;
-        font-size: 1.5em;
-    }
-    .text-logo{
-        font-size:24px;
-        
-    }
-    .header-handlogo{
-        padding-top:15px;
-        width:38px;
-    }
-
-}
-.list-item button{
-    border:none;
-    font-size:24px;
-            font-weight:100;
-            background:rgb(249, 249, 249);
-}
-
-
-.list-item button:hover{
-    color:rgb(6, 6, 6);
-    border-left: 1px solid black;
-    padding-left:18px;
-    cursor:pointer;
-    
-}
-
-.fa-chevron-circle-down{
-    padding-left:10px;
-    font-size:18px;
-}
-
-.carret-rotate{
-    transform-origin: 67% 50%;
-    transform: rotate(180deg);
-    
-
-}
-.scrolltotop{
-    position:fixed;
-    bottom:0;
-    right:5%;
-    background:white;
-    font-size:18px;
-    font-family: 'Raleway';
-    padding:10px 10px;
-    z-index: 1000;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-.scrolltotop:hover{
-    background:rgb(0, 0, 14);
-    color:white;
-    cursor:pointer;
-}
-.phoneaddress{
-    font-size:14px;
-}
-
-    </style>
-
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
 </head>
+
 <body>
+    <!---------------------------------------------------- HEADER ---------------------------------------------------->
+
     <div class="forhomegohere"></div>
     <button id="scrolltotop" class="scrolltotop no-show">scroll to top <i class="fas fa-arrow-up"></i></button>
     <header>
         <div class="container">
             <div class="row topheader">
                 <div class="col-12 text-upper-logo">
-                   
                     <a href="index.html"><img class="header-handlogo" src="images/bjhandlogoblack.png" alt="the Buddy Jane logo which depicts a hand holding a bud."></a>
                     <a href="index.html" class="text-logo ml-2">Buddy Jane</a>
-                    <!-- <button class="menu-button"><i class="fas fa-bars"></i></button>  -->
                     <input type="checkbox" id="toggle-menu"/>
                     <label for="toggle-menu" class="menu-button mt-4">
                       <span id="hamburger-icon" class="menu-icon"></span>
                     </label>
-                </div>
-                
+                </div>  
             </div>
             <div class="row no-show" id="menu">
                 <div class="col-12">
-                        <ul class="text-center ">
-                                <li class="list-item"><a href="#">Download App</a></li>
-                                <li class="list-item"><button id="features-button">Features<i class="fas fa-chevron-circle-down"></i></button></li>
-                                <div class="no-show" id="tabs-menu">
-                                    <li class="list-item"><a id="social-page" href="#">Social Page</a></li>
-                                    <li class="list-item"><a id="social-profile" href="#">Social Profile</a></li>
-                                    <li class="list-item"><a id="shop" href="#">Shop</a></li>
-                                    <li class="list-item"><a id="420promos" href="#">420 Promos</a></li>
-                                    <li class="list-item"><a id="buddy-finder" href="#">Buddy Finder</a></li>
-                                    <li class="list-item"><a id="bud-finder" href="#">Bud Finder</a></li>
-                                    <li class="list-item"><a id="budcast" href="#">Budcast</a></li>
-                                    <li class="list-item"><a id="chats" href="#">Chats</a></li>
-                                    <li class="list-item"><a id="your-business" href="#">Your Business</a></li>
-                                </div>
-                                
-                                
-                            </ul>
+                    <ul class="text-center ">
+                        <li class="list-item"><a href="#">Download App</a></li>
+                        <li class="list-item"><button id="features-button">Features<i class="fas fa-chevron-circle-down"></i></button></li>
+                        <div class="no-show" id="tabs-menu">
+                            <li class="list-item"><a id="social-page" href="#">Social Page</a></li>
+                            <li class="list-item"><a id="social-profile" href="#">Social Profile</a></li>
+                            <li class="list-item"><a id="shop" href="#">Shop</a></li>
+                            <li class="list-item"><a id="420promos" href="#">420 Promos</a></li>
+                            <li class="list-item"><a id="buddy-finder" href="#">Buddy Finder</a></li>
+                            <li class="list-item"><a id="bud-finder" href="#">Bud Finder</a></li>
+                            <li class="list-item"><a id="budcast" href="#">Budcast</a></li>
+                            <li class="list-item"><a id="chats" href="#">Chats</a></li>
+                            <li class="list-item"><a id="your-business" href="#">Your Business</a></li>
+                        </div>
+                    </ul>
                 </div>
             </div>
+
+    <!---------------------------------------------------- BANNER ---------------------------------------------------->
+
             <div class="row">
                 <div class="col-md-6 col-12 order-2 order-md-1">
-                    
                     <h2 class="banner-oneApp">One App, All Cannabis</h2>
                     <hr class="oneapp-horizontaldiv">
-                    <!-- <button class="banner-button" type="button">Download App</button> -->
                     <div class="text-center">
                         <a href="#"><img class="banner-appstore" src="images/appstore.png" alt="of the app store button"></a>
                     </div>
                     <div class="text-center banner-android">Available on Android soon!</div>
-                    <!-- <a href="#"><img class="banner-android" src="images/android.png" alt="of the android google play button"></a> -->
-                    
-                    
                 </div>
                 <div class="col-md-6 col-12 order-1 order-md-2">
                     <img class="header-phone d-block" data-aos="zoom-in" data-aos-duration="2000" src="images/final/bannerphones-final.png" alt="various features of the Buddy Jane App including the home page.">
-                    
                 </div>
             </div>
         </div>
     </header>
+
+    <!---------------------------------------------------- INTRO ---------------------------------------------------->
+
     <section>
         <div class="container-fluid body-content">
             <div class="row">
@@ -798,20 +83,21 @@ input[type="image"] {
                 </div>
             </div>
             <div class="forsocialpagegohere"></div>
-            <hr class="intro-socialprofilepage-divider">
+            <hr class="body-content-divider">
+            
+    <!---------------------------------------------------- FEATURES ---------------------------------------------------->   
             
              <!-- social-page -->
             <div class="row">
-                    <div class="offset-lg-1 offset-md-2 offset-0 col-12 col-md-4 order-2 order-md-1">
-                            <img class="featurephoneimages" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/social-profile-phone-final.png" alt="the feature called Social Timeline. The image depicts a timeline that allows the user to go through the various posts they connect with.">
-                        </div>
+                <div class="offset-lg-1 offset-md-2 offset-0 col-12 col-md-4 order-2 order-md-1">
+                    <img class="featurephoneimages" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/social-profile-phone-final.png" alt="the feature called Social Timeline. The image depicts a timeline that allows the user to go through the various posts they connect with.">
+                </div>
                 <div class="med-wrapper col-md-5 offset-md-0 col-12 col-lg-4 order-1 order-md-2">
                     <h2 class="feature-titles">Social Page</h2>
-                    <hr class="ST-small-divider"><br><br>
-                    <div class="ST-description">Share posts and info with your buddies, and find great deals on Cannabis near you.</div>
-                    <button class="ST-tryitnow" type="button">Try It Now</button>
+                    <hr class="social-page-small-divider"><br><br>
+                    <div class="feature-description">Share posts and info with your buddies, and find great deals on Cannabis near you.</div>
+                    <button class="social-page-tryitnow tryitnow" type="button">Try It Now</button>
                 </div>
-
             </div>
             <div class="forsocialprofilegohere"></div>
             <hr class="body-content-divider">
@@ -820,220 +106,203 @@ input[type="image"] {
             <div class="row">
                 <div class="offset-3 col-4">
                     <h2 class="feature-titles">Social Profile</h2>
-                    <hr class="SP-small-divider"><br><br>
-                    <div class="SP-description">Express yourself with your own unique profile page.</div>
-                    <button class="SP-tryitnow" type="button">Try It Now</button>
+                    <hr class="social-profile-small-divider"><br><br>
+                    <div class="feature-description">Express yourself with your own unique profile page.</div>
+                    <button class="social-profile-tryitnow tryitnow" type="button">Try It Now</button>
                 </div>
                 <div class=" col-4">
                     <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/social-profile-final.png" alt="the feature called Social Profile Page. Depicts a homepage with a profile picture and various other images the the user has connection to.">
                 </div>
-                
             </div>
             <div class="forshopgohere"></div>
             <hr class="body-content-divider">
+
             <!-- shop -->
-            <div class="row">
-                        
-                    <div class="offset-1 col-4">
-                        <img class="featurephoneimages" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/shop-final.png" alt="the feature is called Shop. The image depicts a profile page with items up for sale.">
-                    </div>
-                    <div class="col-4">
-                            <h2 class="feature-titles">Shop</h2>
-                            <hr class="Chats-small-divider"><br><br>
-                            <div class="ST-description">Create your own personal online store where you can buy, sell and trade with your buddies.</div>
-                            <button class="Chats-tryitnow" type="button">Try It Now</button>
-                        </div>
-                </div>
-                <div class="for420promosgohere"></div>
-                <hr class="body-content-divider">
-            <!-- 420 Promos -->
-          <div class="row">
-                <div class="offset-3 col-4">
-                    <h2 class="feature-titles">420 Promos</h2>
-                    <hr class="BC-small-divider"><br><br>
-                    <div class="SP-description">Get the best deals on cannabis from your local dispensaries and delivery services.</div>
-                    <button class="BC-tryitnow" type="button">Try It Now</button>
+            <div class="row">  
+                <div class="offset-1 col-4">
+                    <img class="featurephoneimages" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/shop-final.png" alt="the feature is called Shop. The image depicts a profile page with items up for sale.">
                 </div>
                 <div class="col-4">
-                        <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/420promo-final.png" alt="the feature called 420 Promos. The image depicts a women's profile with a marijuana background and a promo in front that states 420.">
-                    </div>
+                    <h2 class="feature-titles">Shop</h2>
+                    <hr class="shop-small-divider"><br><br>
+                    <div class="feature-description">Create your own personal online store where you can buy, sell and trade with your buddies.</div>
+                    <button class="shop-tryitnow tryitnow" type="button">Try It Now</button>
+                </div>
+            </div>
+            <div class="for420promosgohere"></div>
+            <hr class="body-content-divider">
+
+            <!-- 420 Promos -->
+            <div class="row">
+                <div class="offset-3 col-4">
+                    <h2 class="feature-titles">420 Promos</h2>
+                    <hr class="promo420-small-divider"><br><br>
+                    <div class="feature-description">Get the best deals on cannabis from your local dispensaries and delivery services.</div>
+                    <button class="promo420-tryitnow tryitnow" type="button">Try It Now</button>
+                </div>
+                <div class="col-4">
+                    <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/420promo-final.png" alt="the feature called 420 Promos. The image depicts a women's profile with a marijuana background and a promo in front that states 420.">
+                </div>
             </div>
             <div class="forbuddyfindergohere"></div>
-            
             <hr class="body-content-divider">
-              <!-- Buddy Finder -->
-              <div class="row">
-                    <div class="offset-1 col-4">
-                        <img class="featurephoneimages" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/Buddy-Finder-final.png" alt="the feature called Buddy Finder. The image depicts a map with other users that can be potential buddies.">
-                    </div>
-                    <div class="col-4">
-                        <h2 class="feature-titles">Buddy Finder</h2>
-                        <hr class="BFR-small-divider"><br><br>
-                        <div class="SP-description">Connect with like-minded buddies near you and all over the world.</div>
-                        <button class="BFR-tryitnow" type="button">Try It Now</button>
-                    </div>
-                </div>
-                <div class="forbudfindergohere"></div>
-                <hr class="body-content-divider">
-                <!-- Bud finder -->
-            <div class="row">
-                    <div class="offset-3 col-4">
-                        <h2 class="feature-titles">Bud Finder</h2>
-                        <hr class="BF-small-divider"><br><br>
-                        <div class="ST-description">Locate nearby dispensaries, deliveries, brands, and events. Place orders directly for pick-up to avoid lines or have it delivered to you.</div>
-                        <button class="BF-tryitnow" type="button">Try It Now</button>
-                    </div>
-                    <div class="col-4">
-                        <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/Bud-Finder-final.png" alt="the feature called Bud Finder. The image depicts a map of the different dispenseries and available shops to purchase bud.">
-                    </div>
-                </div>
-                <div class="forbudcastgohere"></div>
-                <hr class="body-content-divider">
-                <!-- Budcast -->
-              <div class="row">
-                    <div class="offset-1 col-4">
-                        <img class="featurephoneimages" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/Budcast-final.png" alt="the feature called Budcast. The image depicts a group of people in various screens having a group video chat.">
-                    </div>
-                    <div class="col-4">
-                        <h2 class="feature-titles">Budcast</h2>
-                        <hr class="BC-small-divider"><br><br>
-                        <div class="SP-description">Smoke anywhere with any buddy in real-time using live group video.</div>
-                        <button class="BC-tryitnow" type="button">Try It Now</button>
-                    </div>
-                </div>
-                <div class="forchatsgohere"></div>
-                <hr class="body-content-divider">
-                <!-- chats -->
-            <div class="row">
-                    <div class="offset-3 col-4">
-                        <h2 class="feature-titles">Chats</h2>
-                        <hr class="Chats-small-divider"><br><br>
-                        <div class="ST-description">Stay in touch with safe, encrypted direct messaging where you can text, create group chats, or connect live via one-on-one video.</div>
-                        <button class="Chats-tryitnow" type="button">Try It Now</button>
-                    </div>
-                    <div class="col-4">
-                        <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/Chats-final.png" alt="the feature is called Chats. The image depicts a direct message chat between two users. ">
-                    </div>
-                </div>
-                <div class="foryourbusinessgohere"></div>
-                <hr class="body-content-divider">
-                 
-                <!-- Your Business -->
-              <div class="row mb-5">
-                    <div class="offset-1 col-4">
-                        <img class="featurephoneimages mb-5" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/yourbusiness1-final.png" alt="the feature called Your Business. The image depicts a list of options included flower, edibles, vapes, and concentrates to order.">
-                    </div>
-                    <div class="col-4">
-                        <h2 class="feature-titles">Your Business</h2>
-                        <hr class="BC-small-divider"><br><br>
-                        <div class="SP-description">Your business can use Buddy Jane to directly connect with local customers as well as the global cannabis community, offering deals to increase business, and expand your customer base.</div>
-                        <button class="BC-tryitnow" type="button">Try It Now</button>
-                    </div>
-                </div>
-                <!-- Your Business 2 -->
-                <div class="row mt-5">
-                    <div class="offset-3 col-4">
-                        <!-- <h2 class="social-profile">Your Business Cont.</h2> -->
-                        <div class="SP-description mt-2">With an Advanced Business Account:</div>
-                        <hr class="BC-small-divider"><br><br>
 
-                        <ul>
-                            <li>Customers can place orders directly for pick-up to avoid lines, or for delivery.</li>
-                            <li>Upload and maintain your menu to keep it current for your customers.</li>
-                            <li>Use our API's to integrate with your POS.</li>
-                            <li>Rich data analytics and reporting that capture sales trends and customer buying habits to better forecast your inventory and increase sales.</li>
-                            <li>Incentivize your client base with direct target marketing via 420 Promos.</li>
-                            <li>Access to JaneXchange where you can view local and regional pricing data in real-time and network with certified vendors to ensure you are getting consistent pricing and quality.</li>
-                        </ul>
-                        <button class="YB2-tryitnow" type="button">Try It Now</button>
-                    </div>
-                    <div class="col-4">
-                            <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/yourbusiness2-final.png" alt="the feature called Your Business continued. The image depicts a bud with the name Gorilla Glue and its description. It also has the price for it listed.">
-                        </div>
-                    </div>
-                    <hr class="body-content-divider">
-                
-                
+            <!-- Buddy Finder -->
+            <div class="row">
+                <div class="offset-1 col-4">
+                    <img class="featurephoneimages" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/Buddy-Finder-final.png" alt="the feature called Buddy Finder. The image depicts a map with other users that can be potential buddies.">
+                </div>
+                <div class="col-4">
+                    <h2 class="feature-titles">Buddy Finder</h2>
+                    <hr class="BFR-small-divider"><br><br>
+                    <div class="feature-description">Connect with like-minded buddies near you and all over the world.</div>
+                    <button class="BFR-tryitnow tryitnow" type="button">Try It Now</button>
+                </div>
+            </div>
+            <div class="forbudfindergohere"></div>
+            <hr class="body-content-divider">
+
+            <!-- Bud finder -->
+            <div class="row">
+                <div class="offset-3 col-4">
+                    <h2 class="feature-titles">Bud Finder</h2>
+                    <hr class="BF-small-divider"><br><br>
+                    <div class="feature-description">Locate nearby dispensaries, deliveries, brands, and events. Place orders directly for pick-up to avoid lines or have it delivered to you.</div>
+                    <button class="BF-tryitnow tryitnow" type="button">Try It Now</button>
+                </div>
+                <div class="col-4">
+                    <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/Bud-Finder-final.png" alt="the feature called Bud Finder. The image depicts a map of the different dispenseries and available shops to purchase bud.">
+                </div>
+            </div>
+            <div class="forbudcastgohere"></div>
+            <hr class="body-content-divider">
+
+            <!-- Budcast -->
+            <div class="row">
+                <div class="offset-1 col-4">
+                    <img class="featurephoneimages" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/Budcast-final.png" alt="the feature called Budcast. The image depicts a group of people in various screens having a group video chat.">
+                </div>
+                <div class="col-4">
+                    <h2 class="feature-titles">Budcast</h2>
+                    <hr class="BC-small-divider"><br><br>
+                    <div class="feature-description">Smoke anywhere with any buddy in real-time using live group video.</div>
+                    <button class="BC-tryitnow tryitnow" type="button">Try It Now</button>
+                </div>
+            </div>
+            <div class="forchatsgohere"></div>
+            <hr class="body-content-divider">
+
+            <!-- chats -->
+            <div class="row">
+                <div class="offset-3 col-4">
+                    <h2 class="feature-titles">Chats</h2>
+                    <hr class="chats-small-divider"><br><br>
+                    <div class="feature-description">Stay in touch with safe, encrypted direct messaging where you can text, create group chats, or connect live via one-on-one video.</div>
+                    <button class="chats-tryitnow tryitnow" type="button">Try It Now</button>
+                </div>
+                <div class="col-4">
+                    <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/Chats-final.png" alt="the feature is called Chats. The image depicts a direct message chat between two users. ">
+                </div>
+            </div>
+            <div class="foryourbusinessgohere"></div>
+            <hr class="body-content-divider">
+                 
+            <!-- Your Business -->
+            <div class="row mb-5">
+                <div class="offset-1 col-4">
+                    <img class="featurephoneimages mb-5" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/yourbusiness1-final.png" alt="the feature called Your Business. The image depicts a list of options included flower, edibles, vapes, and concentrates to order.">
+                </div>
+                <div class="col-4">
+                    <h2 class="feature-titles">Your Business</h2>
+                    <hr class="YB-small-divider"><br><br>
+                    <div class="feature-description">Your business can use Buddy Jane to directly connect with local customers as well as the global cannabis community, offering deals to increase business, and expand your customer base.</div>
+                    <button class="YB-tryitnow tryitnow" type="button">Try It Now</button>
+                </div>
+            </div>
+
+            <!-- Your Business 2 (ADVANCED BUSINESS ACCOUNT) -->
+            <div class="row mt-5">
+                <div class="offset-3 col-4 ABA">
+                    <!-- <h2 class="social-profile">Your Business Cont.</h2> -->
+                    <div class="feature-description mt-2">With an Advanced Business Account:</div>
+                    <hr class="ABA-small-divider"><br><br>
+                    <ul>
+                        <li>Customers can place orders directly for pick-up to avoid lines, or for delivery.</li>
+                        <li>Upload and maintain your menu to keep it current for your customers.</li>
+                        <li>Use our API's to integrate with your POS.</li>
+                        <li>Rich data analytics and reporting that capture sales trends and customer buying habits to better forecast your inventory and increase sales.</li>
+                        <li>Incentivize your client base with direct target marketing via 420 Promos.</li>
+                        <li>Access to JaneXchange where you can view local and regional pricing data in real-time and network with certified vendors to ensure you are getting consistent pricing and quality.</li>
+                    </ul>
+                    <button class="ABA-tryitnow tryitnow" type="button">Try It Now</button>
+                </div>
+                <div class="col-4">
+                    <img class="featurephoneimages" data-aos="slide-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" src="images/final/yourbusiness2-final.png" alt="the feature called Your Business continued. The image depicts a bud with the name Gorilla Glue and its description. It also has the price for it listed.">
+                </div>
+            </div>
+            <hr class="body-content-divider">
         </div>
     </section>
     <section class="apphome">
 
-            <!-- Full Phone -->
-            <div class="row">
-                    <div class="offset-2 col-4">
-                        <img class="full-phone" data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1400" src="images/final/fullphone-final.png" alt="the front page of the Buddy Jane App. It depicts the Buddy Jane logo in white in front of a blue background.">
-                        
-                        
-                    </div>
-                    <div class="col-4">
-                        <h2 class="oneapp-full">One App. All Cannabis.</h2>
-                        <button class="letsgetstarted" type="button">Let's Get Started</button>
-                            
-                        
-                    </div>
-                </div>
-
+        <!-- FINAL PHONE -->
+        <div class="row">
+            <div class="offset-2 col-4">
+                <img class="final-phone" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1400" src="images/final/fullphone-final.png" alt="the front page of the Buddy Jane App. It depicts the Buddy Jane logo in white in front of a blue background.">
+            </div>
+            <div class="col-4">
+                <h2 class="oneapp-final">One App, All Cannabis</h2>
+                <button class="letsgetstarted" type="button">Let's Get Started</button>
+            </div>
+        </div>
     </section>
+
+    <!---------------------------------------------------- FOOTER ---------------------------------------------------->
+
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center pt-5">
-                    
                     <a href="#"><img class="appstore mb-2" src="images/appstore.png" alt="the Apple App Store logo."></a>
                     <div class="text-center banner-android mt-3 mb-5">Available on Android soon!</div>
                     <hr class="footerdiv mb-4">
                 </div>
             </div>
-            <div class="row pb-3 footer-tabs">
-                <div class="offset-2 col-2 pl-5">
-                    <div class="tab-titles pb-2"><strong>FEATURES</strong></div>
-                    
-                    <ul>
-                        <li> <a id="social-page2" href="#">Social Page</a></li>
-                        <li> <a id="social-profile2" href="#">Social Profile</a></li>
-                        <li> <a id="buddy-finder2" href="#">Buddy Finder</a></li>
-                        <li> <a id="bud-finder2" href="#">Bud Finder</a></li>
-                        <li> <a id="budcast2" href="#">Budcast</a></li>
-                        <li> <a id="chats2" href="#">Chats</a></li>
-                        <li> <a id="shop2" href="#">Shop</a></li>
-                        <li> <a id="420promos2" href="#">420 Promos</a></li>
-                        <li> <a id="your-business2" href="#">Your Business</a></li>
-                        
-                    </ul>
+            <div class="row">
+                <div class="offset-2 col-4">
+                    <div class="tab-titles footer-titles pb-2"><strong>FEATURES</strong></div>
                 </div>
-                
-                <div class="col-2 pl-5">
-                    <div class="tab-titles pb-2"><strong>SOCIAL</strong></div>
-                    <ul>
-                        <li> <a target="_blank" href="https://twitter.com/okbuddyjane">Twitter</a></li>
-                        <li> <a target="_blank" href="https://www.instagram.com/buddyjane/">Instagram</a></li>
-                        <li> <a target="_blank" href="https://www.facebook.com/Buddy-Jane-Mobile-659726217568443/">Facebook</a> </li>
-                        <li> <a target="_blank" href="https://www.youtube.com/channel/UCC63VBrN-Yf7EH5YGc2HNTA?view_as=subscriber">Youtube</a></li>
-                        
-                    </ul>
-                    
-                    
+                <div class="offset-1 col-2">
+                    <div class="tab-titles footer-titles pb-2"><strong>SOCIAL</strong></div>
                 </div>
-                <div class="col-4">
-                        <div class="tab-titles pb-2"><strong>ABOUT</strong></div>
-                        <!-- Creators & long time buddies Loni & Paul have been building & shaping Buddy Jane with the intention of creating a friendly, easy to use, all-in-one platform for cannabis lovers to connect & share in an open, respectful, and welcoming environment. <br><br> -->
-                        
+            </div>
+            <div class="row">
+                <div class="offset-2 col-2 text-center">
+                    <h6><a id="social-page2" href="#">Social Page</a></h6>
+                    <h6><a id="social-profile2" href="#">Social Profile</a></h6>
+                    <h6><a id="shop2" href="#">Shop</a></h6>
+                    <h6><a id="420promos2" href="#">420 Promos</a></h6>
+                    <h6><a id="buddy-finder2" href="#">Buddy Finder</a></h6>                   
                 </div>
-                
-                
-
-
-
-
+                <div class="col-2 text-center">
+                    <h6><a id="bud-finder2" href="#">Bud Finder</a></h6>
+                    <h6><a id="budcast2" href="#">Budcast</a></h6>
+                    <h6><a id="chats2" href="#">Chats</a></h6>
+                    <h6><a id="your-business2" href="#">Your Business</a></h6>
+                </div>
+                <div class="offset-1 col-2 text-center">
+                    <h6><a target="_blank" href="https://twitter.com/okbuddyjane">Twitter</a></h6>
+                    <h6><a target="_blank" href="https://www.instagram.com/buddyjane/">Instagram</a></h6>
+                    <h6><a target="_blank" href="https://www.facebook.com/Buddy-Jane-Mobile-659726217568443/">Facebook</a></h6>
+                    <h6><a target="_blank" href="https://www.youtube.com/channel/UCC63VBrN-Yf7EH5YGc2HNTA?view_as=subscriber">Youtube</a></h6>
+                </div>
             </div>
             <div class="row footer-logo">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center mt-5">
                     <a href="index.html" class="footer-text-logo">Buddy Jane</a> 
                     <a href="index.html"><img class="header-handlogo" src="images/handlogowhite.png" alt="the Buddy Jane logo which depicts a hand holding a bud."></a> 
-                    
-                        
                 </div>
             </div>
             <div class="row">

@@ -25,6 +25,13 @@
             font-size:30px;
             margin-top:90px;
         }
+        .feature-titles2{
+            font-family: 'Raleway';
+            font-weight:300;
+            font-size:30px;
+            margin-top:90px;
+            display:none;
+        }
         /* this class can be used for all feature descriptions */
         .feature-description{
             font-size:24px;
@@ -32,6 +39,12 @@
         }
         /* this is the horizontal divider that divides the sections */
         .body-content-divider{
+            width:80%;
+            background:rgb(213, 213, 213);
+            margin-top:50px;
+            margin-bottom:100px;
+        }
+        .body-content-divider-intro{
             width:80%;
             background:rgb(213, 213, 213);
             margin-top:50px;
@@ -268,6 +281,12 @@
             width:60px;
             float:left;
         }
+        .social-page-small-divider2{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            display:none;
+        }
         .social-page-tryitnow{
             background:rgb(117, 155, 252);
             margin-top:50px;
@@ -284,6 +303,12 @@
             height:3px;
             width:60px;
             float:left;
+        }
+        .social-profile-small-divider2{
+            background:rgb(82, 142, 247);
+            height:3px;
+            width:60px;
+            display:none;
         }
         
         .social-profile-tryitnow{
@@ -303,6 +328,12 @@
             width:60px;
             float:left;
         }
+        .shop-small-divider2{
+            background:rgb(82, 142, 247);
+            height:3px;
+            width:60px;
+            display:none;
+        }
         .shop-tryitnow{
             background:rgb(82, 142, 247);
             margin-top:50px;
@@ -319,6 +350,12 @@
             height:3px;
             width:60px;
             float:left;
+        }
+        .promo420-small-divider2{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            display:none;
         }
         .promo420-tryitnow{
             background:rgb(117, 155, 252);
@@ -337,6 +374,12 @@
             width:60px;
             float:left;
         }
+        .BFR-small-divider2{
+            background:rgb(160, 173, 249);
+            height:3px;
+            width:60px;
+            display:none;
+        }
         .BFR-tryitnow{
             background:rgb(160, 173, 249);
             margin-top:50px;
@@ -349,10 +392,16 @@
 
         /* 6. BUD FINDER (PHONE IS ON THE RIGHT) */
         .BF-small-divider{
-            background:rgb(160, 167, 249);            
+            background:rgb(160, 167, 249);       
             height:3px;
             width:60px;
             float:left;
+        }
+        .BF-small-divider2{
+            background:rgb(160, 167, 249);       
+            height:3px;
+            width:60px;
+            display:none;
         }
         .BF-tryitnow{
             background:rgb(160, 167, 249);  
@@ -371,6 +420,12 @@
             width:60px;
             float:left;
         }
+        .BC-small-divider2{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            display:none;
+        }
         .BC-tryitnow{
             background:rgb(117, 155, 252);
             margin-top:50px;
@@ -387,6 +442,12 @@
             height:3px;
             width:60px;
             float:left;
+        }
+        .chats-small-divider2{
+            background:rgb(82, 142, 247);
+            height:3px;
+            width:60px;
+            display:none;
         }
         .chats-tryitnow{
             background:rgb(82, 142, 247);
@@ -405,6 +466,12 @@
             width:60px;
             float:left;
         }
+        .YB-small-divider2{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            display:none;
+        }
         .YB-tryitnow{
             background:rgb(117, 155, 252);
             margin-top:50px;
@@ -421,6 +488,12 @@
             height:3px;
             width:60px;
             float:left;
+        }
+        .ABA-small-divider2{
+            background:rgb(117, 155, 252);
+            height:3px;
+            width:60px;
+            display:none;
         }
         .ABA-tryitnow{
             background:rgb(117, 155, 252);
@@ -588,6 +661,52 @@
             body{
                 background:blue;
             }
+            .body-content-divider-intro{
+                width:80%;
+                background:rgb(213, 213, 213);
+                margin-top:10px;
+                margin-bottom:70px;
+            }
+            .featurephoneimages{
+                width:450px;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .social-page-small-divider,.social-profile-small-divider,.shop-small-divider,.promo40-small-divider,.BFR-small-divider,.BF-small-divider,.BC-small-divider,.chats-small-divider,.YB-small-divider,.ABA-small-divider{
+                display:none;
+            }
+            .social-page-small-divider2,.social-profile-small-divider2,.shop-small-divider2,.promo420-small-divider2,.BFR-small-divider2,.BF-small-divider2,.BC-small-divider2,.chats-small-divider2,.YB-small-divider2,.ABA-small-divider2{
+                float:none;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:0px;
+                margin-bottom:30px;
+            }
+            .social-page-tryitnow,.social-profile-tryitnow,.shop-tryitnow,.promo420-tryitnow,.BFR-tryitnow,.BF-tryitnow,.BC-tryitnow,.chats-tryitnow,.YB-tryitnow,.ABA-tryitnow{
+                text-align:center;
+                float:none;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .feature-description{
+                padding-left:100px;
+                padding-right:100px;
+                text-align:center;
+                margin-top:-50px;
+                padding-top:0px;
+            }
+            .feature-titles{
+                display:none;
+            }
+            .feature-titles2{
+                display:block;
+                text-align:center;
+                margin-top:0px;
+                margin-bottom:30px;
+            }
             .banner-oneApp{
                 font-size:38px;
                 margin-top:80px;
@@ -596,7 +715,7 @@
                 width:140px;
             }
             .intro{
-                font-size:24px;
+                font-size:22px;
                 padding: 100px 100px 50px 100px;
                 font-family: 'Raleway', sans-serif;
             }
@@ -621,9 +740,26 @@
             body{
                 background:green;
             }
-            .intro{
+            .body-content-divider-intro{
+                width:80%;
+                background:rgb(213, 213, 213);
+                margin-top:0px;
+                margin-bottom:60px;
+            }
+            .feature-titles2{
                 font-size:24px;
-                padding: 100px 100px 50px 100px;
+            }
+            .featurephoneimages{
+                width:350px;
+            }
+            .feature-description{
+                font-size:22px;
+                padding-left:50px;
+                padding-right:50px;
+            }
+            .intro{
+                font-size:18px;
+                padding: 50px 50px;
                 font-family: 'Raleway', sans-serif;
             }
             .header-phone{
@@ -668,9 +804,25 @@
             body{
                 background:orange;
             }
+            .featurephoneimages{
+                width:300px;
+            }
+            .feature-description{
+                font-size:20px;
+                padding-left:30px;
+                padding-right:30px;
+            }
+            .social-page-tryitnow,.social-profile-tryitnow,.shop-tryitnow,.promo420-tryitnow,.BFR-tryitnow,.BF-tryitnow,.BC-tryitnow,.chats-tryitnow,.YB-tryitnow,.ABA-tryitnow{
+                text-align:center;
+                float:none;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+                font-size:16px;
+            }
             .intro{
-                font-size:24px;
-                padding: 100px 50px 50px 50px;
+                font-size:16px;
+                padding: 50px 50px;
                 font-family: 'Raleway', sans-serif;
             }
             .header-phone{
@@ -708,6 +860,9 @@
                 margin-top:5px;
                 margin-right:13px;
             }
+            .banner-android{
+                font-size:16px;
+            }
         }
 
 
@@ -716,9 +871,15 @@
             body{
                 background:lavender;
             }
+            .featurephoneimages{
+                width:250px;
+            }
+            .feature-description{
+                font-size:16px;
+            }
             .intro{
-                font-size:24px;
-                padding: 100px 20px 50px 20px;
+                font-size:16px;
+                padding: 40px 10px;
                 font-family: 'Raleway', sans-serif;
             }
             .menu-icon {
@@ -731,6 +892,9 @@
             .header-handlogo{
                 padding-top:15px;
                 width:38px;
+            }
+            .banner-android{
+                font-size:14px;
             }
         }
 

@@ -58,7 +58,7 @@
             font-weight:300;
             border-radius:50px;
         }
-
+       
 
 
     /************************************************* HEADER *************************************************/
@@ -542,6 +542,10 @@
             font-size:50px;
             margin-top:150px;
         }
+        .oneapp-final2{
+            display:none;
+        }
+
 
     
 
@@ -626,13 +630,15 @@
 
     /************************************************* MEDIA QUERIES *************************************************/
 
+    /* I use different body background for certain breakpoints as cues to help when I make the site responsive. */
+
         @media (max-width: 1200px){
+            /* body{
+                background:red;
+            } */
             .banner-oneApp{
                 margin-top:120px;
                 font-size:50px;
-            }
-            body{
-                background:red;
             }
             .intro{
                 font-size:24px;
@@ -642,24 +648,55 @@
             .header-phone{
                 width:100%;
             }
+            .oneapp-final{
+                font-size:42px;
+            }
         }
 
 
         @media (max-width: 1024px){
-            body{
+            /* body{
                 background:yellow;
-            }
+            } */
             .intro{
                 font-size:24px;
                 padding: 100px 150px 50px 150px;
                 font-family: 'Raleway', sans-serif;
             }
+            .hidetext{
+                display:none;
+            }
+            .developMT{
+                padding-bottom:20px;
+            }
         }
 
 
-        @media (max-width: 992px){
-            body{
+        @media (max-width: 991px){
+            /* body{
                 background:blue;
+            } */
+            .oneapp-final{
+                display:none;
+            }
+            .oneapp-final2{
+                display:block;
+                text-align: center;
+                font-family: 'Melville';
+                font-size:50px;
+                margin-top:0px;
+                margin-bottom:30px;
+            }
+            .final-phone{
+                display:block;
+                margin-right:auto;
+                margin-left:auto;
+                width:400px;
+                margin-bottom:40px
+            }
+            .letsgetstarted{
+                margin-bottom:70px;
+                margin-top:-10px;
             }
             .body-content-divider-intro{
                 width:80%;
@@ -673,7 +710,7 @@
                 margin-left:auto;
                 margin-right:auto;
             }
-            .social-page-small-divider,.social-profile-small-divider,.shop-small-divider,.promo40-small-divider,.BFR-small-divider,.BF-small-divider,.BC-small-divider,.chats-small-divider,.YB-small-divider,.ABA-small-divider{
+            .social-page-small-divider,.social-profile-small-divider,.shop-small-divider,.promo420-small-divider,.BFR-small-divider,.BF-small-divider,.BC-small-divider,.chats-small-divider,.YB-small-divider,.ABA-small-divider{
                 display:none;
             }
             .social-page-small-divider2,.social-profile-small-divider2,.shop-small-divider2,.promo420-small-divider2,.BFR-small-divider2,.BF-small-divider2,.BC-small-divider2,.chats-small-divider2,.YB-small-divider2,.ABA-small-divider2{
@@ -707,6 +744,12 @@
                 margin-top:0px;
                 margin-bottom:30px;
             }
+            .ABA ul{
+                padding-left:100px;
+                padding-right:100px;
+                text-align:center;
+                list-style-position: inside;
+            }
             .banner-oneApp{
                 font-size:38px;
                 margin-top:80px;
@@ -737,8 +780,16 @@
 
 
         @media (max-width: 767px){
-            body{
+            /* body{
                 background:green;
+            } */
+            .oneapp-final2{
+                display:block;
+                text-align: center;
+                font-family: 'Melville';
+                font-size:44px;
+                margin-top:0px;
+                margin-bottom:30px;
             }
             .body-content-divider-intro{
                 width:80%;
@@ -796,14 +847,20 @@
             .SP-tryitnow{
                 margin-bottom:50px;
             }
+            .ABA ul{
+                padding-left:50px;
+                padding-right:50px;
+                text-align:center;
+                list-style-position: inside;
+            }
         }
 
 
 
         @media (max-width: 424px){
-            body{
+            /* body{
                 background:orange;
-            }
+            } */
             .featurephoneimages{
                 width:300px;
             }
@@ -822,7 +879,7 @@
             }
             .intro{
                 font-size:16px;
-                padding: 50px 50px;
+                padding: 50px 20px;
                 font-family: 'Raleway', sans-serif;
             }
             .header-phone{
@@ -863,14 +920,20 @@
             .banner-android{
                 font-size:16px;
             }
+            .ABA ul{
+                padding-left:20px;
+                padding-right:20px;
+                text-align:center;
+                list-style-position: inside;
+            }
         }
 
 
 
         @media (max-width: 319px){
-            body{
+            /* body{
                 background:lavender;
-            }
+            } */
             .featurephoneimages{
                 width:250px;
             }
